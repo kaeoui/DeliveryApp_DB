@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #949396;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;            /* Ocupa el 100% de la altura de la ventana */
+    margin: 0;                /* Elimina cualquier margen predeterminado */
+    flex-direction: column;
+}
+
+h2 {
+    color: #333;
+}
+
+#login, #restaurantList, #foodList, #cart, #paymentOptions, #orderStatus, #deliveryStatus, #pickupStatus {
+    margin-bottom: 30px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.restaurant img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s;
+}
+
+.restaurant img:hover {
+    transform: scale(1.1);
+}
+
+.restaurant, .food {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cartItems li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.food img {
+    width: 100px; /* Ajusta el tamaño según lo necesites */
+    height: 100px; /* Ajusta el tamaño según lo necesites */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+    transition: transform 0.3s;
+}
+
+.food img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+}
+
+.food {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.food p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.food button {
+    margin-left: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.food button:hover {
+    background-color: #45a049;
+}
+
+
+.container-login {
+    width: 650px;
+    height: 400px;
+    background:rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white; 
+    
+}
+
+.container-recibo {
+    width: 400px;
+    height: 300px;
+    background:rgba(0, 0, 0, 0.2);
+    
+    border-radius: 15px;
+    text-decoration: none;
+    color: white; 
+    margin: 5%;
+    
+}

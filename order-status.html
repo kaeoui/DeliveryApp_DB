@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento del Pedido</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="orderStatus">
+        <h2>Elaborando tu pedido...</h2>
+        <p>Por favor, espera un momento.</p>
+    </div>
+
+    <div id="deliveryStatus" style="display:none;">
+        <h2>Tu pedido está en camino...</h2>
+        <p>Se te avisará cuando llegue.</p>
+    </div>
+
+    <div id="pickupStatus" style="display:none;">
+        <h2>Tu pedido ha llegado</h2>
+        <button id="completeOrderButton">Pedido Completado</button>
+    </div>
+
+    <script src="js/order-status.js"></script>
+</body>
+</html>

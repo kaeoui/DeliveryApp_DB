@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones de Pago</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="paymentOptions">
+        <h2>Opciones de Pago</h2>
+        <button id="cashOption">Efectivo</button>
+        <button id="cardOption">Tarjeta</button>
+        <form id="cardForm" style="display:none;">
+            <input type="text" placeholder="Número de tarjeta" maxlength="16" required>
+            <input type="text" placeholder="Fecha de expiración" required>
+            <input type="text" placeholder="CVV" maxlength="3" required>
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+    <script src="js/payment.js"></script>
+</body>
+</html>
